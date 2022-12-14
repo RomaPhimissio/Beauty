@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+@@include('./components/structure/_head.html', {
+'lang':'en',
+'css': './css/home.min.css',
+'title': 'Home',
+'swiper': '',
+})
+
+<body class="home">
+  <div class="wrapper">
+    @@include('./components/structure/_header.html')
+    <main>
+      <h1 class="visually-hidden">Natural Beauty</h1>
+      <section class="desc">
+        <h2 class="visually-hidden">The secret of beauty</h2>
+        <div class="container">
+          <div class="desc__wrapper">
+            <div class="desc__content-block">
+              <div class="desc__content">
+                <p class="desc__title">Discover The Secret Of Natural Beauty</p>
+                <p class="desc__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, urn in scelerisque
+                  enim
+                  commodo. Nec quis posuere dictum aliquet sed turpis ipsum eleifend.</p>
+                <div class="desc__play-block">
+                  <a class="desc__play-explore" href="#">Explore now</a>
+                  <a class="desc__play" href="#">
+                    <span>
+                      <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.4899 9.12801L1.49 0.128038C1.18 -0.0459615 0.801998 -0.0419615 0.495999 0.136038C0.187999 0.316037 0 0.644036 0 1.00004V19C0 19.356 0.187999 19.684 0.495999 19.864C0.651998 19.954 0.825997 20 0.999997 20C1.168 20 1.338 19.958 1.49 19.872L17.4899 10.872C17.8039 10.694 17.9999 10.362 17.9999 10C17.9999 9.63801 17.8039 9.30601 17.4899 9.12801Z"
+                          fill="#F47600" />
+                      </svg>
+                    </span>
+                    <span>Watch video</span>
+                  </a>
+                </div>
+              </div>
+              <div class="desc__product-photo">
+                <div class="desc__product-details">
+                  <span class="desc__details">Details</span>
+                  <span class="desc__details">$120.50</span>
+                  <span class="desc__details">50 mL</span>
+                  <div class="desc__stars">
+                    <div class="desc__stars-body">
+                      <input class="desc__field" type="radio" name="grade" value="5" id="rating5">
+                      <label class="desc__sign" for="rating5"></label>
+                      <input class="desc__field" type="radio" name="grade" value="4" id="rating4">
+                      <label class="desc__sign" for="rating4"></label>
+                      <input class="desc__field" type="radio" name="grade" value="3" id="rating3">
+                      <label class="desc__sign" for="rating3"></label>
+                      <input class="desc__field" type="radio" name="grade" value="2" id="rating2">
+                      <label class="desc__sign" for="rating2"></label>
+                      <input class="desc__field" type="radio" name="grade" value="1" id="rating1" checked>
+                      <label class="desc__sign" for="rating1"></label>
+                    </div>
+                  </div>
+                  <div class="desc__block-btn">
+                    <button class="desc__btn">
+                    </button>
+                    <button class="desc__btn"></button>
+                  </div>
+                </div>
+                <div class="desc__block-photo">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/cream.webp">
+                    <img src="@img/gallery/cream.png" alt="cream">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="desc__icon-block">
+              <ul class="desc__list">
+                <li class="desc__item">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/icon1.webp">
+                    <img src="@img/gallery/icon1.png" alt="icon" loading="lazy">
+                  </picture>
+                  <p class="desc__icon-text">Certified Products</p>
+                </li>
+                <li class="desc__item">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/icon2.webp">
+                    <img src="@img/gallery/icon2.png" alt="icon" loading="lazy">
+                  </picture>
+                  <p class="desc__icon-text">Customers Service</p>
+                </li>
+                <li class="desc__item">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/icon3.webp">
+                    <img src="@img/gallery/icon3.png" alt="icon" loading="lazy">
+                  </picture>
+                  <p class="desc__icon-text">Safe Packaging</p>
+                </li>
+                <li class="desc__item">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/icon4.webp">
+                    <img src="@img/gallery/icon4.png" alt="icon" loading="lazy">
+                  </picture>
+                  <p class="desc__icon-text">Express Delivery</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include('./components/base/_video-pop-up.html')
+      <section class="assort">
+        <div class="container">
+          <div class="assort__wrapper">
+            <div class="assort__content-block">
+              <div class="assort__photo-block">
+                <picture>
+                  <source type="image/webp" srcset="@img/gallery/girl.webp">
+                  <img src="@img/gallery/girl.png" alt="girl" loading="lazy">
+                </picture>
+              </div>
+              <div class="assort__content">
+                <h2 class="assort__title">New Arrival</h2>
+                <p class="assort__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, urn in
+                  scelerisque
+                  enim com.</p>
+                <button class="assort__button">View More</button>
+              </div>
+            </div>
+            <div class="assort__list-block swiper">
+              <ul class="assort__list swiper-wrapper">
+                <li class="assort__item swiper-slide">
+                  <div class="assort__picture">
+                    <picture>
+                      <source type="image/webp" srcset="@img/gallery/assort1.webp">
+                      <img src="@img/gallery/assort1.png" alt="product" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="assort__product-block">
+                    <div class="assort__desc">
+                      <p class="assort__product">Night Crem</p>
+                      <span class="assort__cost">$45.00</span>
+                    </div>
+                    <div class="assort__block-btn">
+                      <button class="assort__btn">
+                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464466C6.97631 0.269204 6.65973 0.269204 6.46447 0.464466C6.2692 0.659728 6.2692 0.976311 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM0 4.5H10V3.5H0V4.5Z"
+                            fill="white" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="assort__item swiper-slide">
+                  <div class="assort__picture">
+                    <picture>
+                      <source type="image/webp" srcset="@img/gallery/assort2.webp">
+                      <img src="@img/gallery/assort2.png" alt="product" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="assort__product-block">
+                    <div class="assort__desc">
+                      <p class="assort__product">Body Lotion</p>
+                      <span class="assort__cost">$65.00</span>
+                    </div>
+                    <div class="assort__block-btn">
+                      <button class="assort__btn">
+                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464466C6.97631 0.269204 6.65973 0.269204 6.46447 0.464466C6.2692 0.659728 6.2692 0.976311 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM0 4.5H10V3.5H0V4.5Z"
+                            fill="white" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="assort__item swiper-slide">
+                  <div class="assort__picture">
+                    <picture>
+                      <source type="image/webp" srcset="@img/gallery/assort3.webp">
+                      <img src="@img/gallery/assort3.png" alt="product" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="assort__product-block">
+                    <div class="assort__desc">
+                      <p class="assort__product">Night Crem</p>
+                      <span class="assort__cost">$45.00</span>
+                    </div>
+                    <div class="assort__block-btn">
+                      <button class="assort__btn">
+                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464466C6.97631 0.269204 6.65973 0.269204 6.46447 0.464466C6.2692 0.659728 6.2692 0.976311 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM0 4.5H10V3.5H0V4.5Z"
+                            fill="white" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="offer">
+        <h2 class="visually-hidden">Special offer</h2>
+        <div class="container">
+          <div class="offer__wrapper">
+            <div class="offer__content-wrap">
+              <div class="offer__content">
+                <div class="offer__decor"></div>
+                <div class="offer__picture">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/offer1.webp">
+                    <img src="@img/gallery/offer1.jpg" alt="picture" loading="lazy">
+                  </picture>
+                </div>
+                <h3 class="offer__title">Special Fastival Offer</h3>
+                <p class="offer__percent">Upto 50% Off</p>
+                <p class="offer__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Dolor, urna, in.</p>
+                <button class="offer__btn">Shop Now</button>
+              </div>
+            </div>
+            <div class="offer__content-wrap">
+              <div class="offer__content">
+                <div class="offer__decor"></div>
+                <div class="offer__picture">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/offer2.webp">
+                    <img src="@img/gallery/offer2.jpg" alt="picture" loading="lazy">
+                  </picture>
+                </div>
+                <h3 class="offer__title">Special Fastival Offer</h3>
+                <p class="offer__percent">Upto 50% Off</p>
+                <p class="offer__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Dolor, urna, in.</p>
+                <button class="offer__btn">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="result">
+        <h2 class="visually-hidden">Result</h2>
+        <div class="container">
+          <div class="result__wrapper">
+            <div class="result__block-content">
+              <div class="result__picture">
+                <picture>
+                  <source type="image/webp" srcset="@img/gallery/man.webp">
+                  <img src="@img/gallery/man.jpg" alt="man" loading="lazy">
+                </picture>
+              </div>
+              <div class="result__content">
+                <span class="result__content-perc">95%</span>
+                <p class="result__title">Be Good To Your Skin. You Will Wear it Every Day for You.</p>
+                <p class="result__par">Lorem ipsum dolor sit amet, consectetur adipi scing elit. Dolor, urn in
+                  scelerisque
+                  enim the commodo. Nec quis posuere dictum aliquet sed turpis ipsum eleifend.</p>
+              </div>
+            </div>
+            <div class="result__block-text">
+              <div class="result__text-item">
+                <span class="result__perc">85%</span>
+                <p class="result__text">Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Dolor, urn in
+                  scelerisque
+                  enim.</p>
+              </div>
+              <div class="result__text-item">
+                <span class="result__perc">85%</span>
+                <p class="result__text">Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Dolor, urn in
+                  scelerisque
+                  enim.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="story">
+        <div class="container">
+          <div class="story__wrapper">
+            <h2 class="story__title">Latest Stories</h2>
+            <p class="story__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, urn in scelerisque
+              enim.
+            </p>
+            <div class="story__list-wrap swiper">
+              <ul class="story__list swiper-wrapper">
+                <li class="story__item swiper-slide">
+                  <div class="story__picture">
+                    <picture>
+                      <source type="image/webp" srcset="@img/gallery/story1.webp">
+                      <img src="@img/gallery/story1.jpg" alt="picture" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="story__content">
+                    <p class="story__data">15 June, 2021</p>
+                    <h3 class="story__subtitle">Body Lotion</h3>
+                    <p class="story__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, urn in
+                      scelerisque
+                      enim sit amet.</p>
+                    <button class="story__btn">Read more...</button>
+                  </div>
+                </li>
+                <li class="story__item swiper-slide">
+                  <div class="story__picture">
+                    <picture>
+                      <source type="image/webp" srcset="@img/gallery/story2.webp">
+                      <img src="@img/gallery/story2.jpg" alt="picture" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="story__content">
+                    <p class="story__data">15 June, 2021</p>
+                    <h3 class="story__subtitle">Cosmetics</h3>
+                    <p class="story__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, urn in
+                      scelerisque
+                      enim sit amet.</p>
+                    <button class="story__btn">Read more...</button>
+                  </div>
+                </li>
+                <li class="story__item swiper-slide">
+                  <div class="story__picture">
+                    <picture>
+                      <source type="image/webp" srcset="@img/gallery/story3.webp">
+                      <img src="@img/gallery/story3.jpg" alt="picture" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="story__content">
+                    <p class="story__data">15 June, 2021</p>
+                    <h3 class="story__subtitle">Facewash & Cream</h3>
+                    <p class="story__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, urn in
+                      scelerisque
+                      enim sit amet.</p>
+                    <button class="story__btn">Read more...</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sponsor">
+        <h2 class="visually-hidden">Sponsors</h2>
+        <div class="container">
+          <div class="sponsor__wrapper">
+            <p class="sponsor__text">Some Of Our Tursted Clients</p>
+            <ul class="sponsor__list">
+              <li class="sponsor__item">
+                <a class="sponsor__link-photo" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/brand1.webp">
+                    <img src="@img/gallery/brand1.png" alt="brand" loading="lazy">
+                  </picture>
+                </a>
+              </li>
+              <li class="sponsor__item">
+                <a class="sponsor__link-photo" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/brand2.webp">
+                    <img src="@img/gallery/brand2.png" alt="brand" loading="lazy">
+                  </picture>
+                </a>
+              </li>
+              <li class="sponsor__item">
+                <a class="sponsor__link-photo" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/brand3.webp">
+                    <img src="@img/gallery/brand3.png" alt="brand" loading="lazy">
+                  </picture>
+                </a>
+              </li>
+              <li class="sponsor__item">
+                <a class="sponsor__link-photo" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/brand4.webp">
+                    <img src="@img/gallery/brand4.png" alt="brand" loading="lazy">
+                  </picture>
+                </a>
+              </li>
+              <li class="sponsor__item">
+                <a class="sponsor__link-photo" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/brand5.webp">
+                    <img src="@img/gallery/brand5.png" alt="brand" loading="lazy">
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="review">
+        <h2 class="visually-hidden">Feedbacks</h2>
+        <div class="container">
+          <div class="review__wrapper">
+            <div class="review__content">
+              <span class="review__slogan">Testimonial</span>
+              <p class="review__headline">Love feom Our Clients Around the World</p>
+              <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, urna, in
+                scelerisque
+                enim commodo. Nec quis at posuere dictum aliquet sed turpis ipsum eleifend. Amet erat sociis in
+                malesuada.
+              </p>
+            </div>
+            <div class="review__comment-block">
+              <div class="review__card">
+                <div class="review__avatar">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/ava1.webp">
+                    <img src="@img/gallery/ava1.jpg" alt="avatar" loading="lazy">
+                  </picture>
+                </div>
+                <div class="review__desc-block">
+                  <p class="review__caption">John Smith</p>
+                  <p class="review__desc">SEO, Google</p>
+                  <img class="review__decor" src="@img/icon/quotes.svg" width="16" height="14" alt="quotes">
+                  <p class="review__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, urna, in
+                    scelerisque enim commodo. Nec quis at posuere dictum aliquet sed turpis ipsum eleifend.</p>
+                </div>
+              </div>
+              <div class="review__card">
+                <div class="review__avatar">
+                  <picture>
+                    <source type="image/webp" srcset="@img/gallery/ava2.webp">
+                    <img src="@img/gallery/ava2.jpg" alt="avatar" loading="lazy">
+                  </picture>
+                </div>
+                <div class="review__desc-block">
+                  <p class="review__caption">Jannat Akter</p>
+                  <p class="review__desc">UI/UX Designer</p>
+                  <img class="review__decor" src="@img/icon/quotes.svg" width="16" height="14" alt="quotes">
+                  <p class="review__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, urna, in
+                    scelerisque enim commodo. Nec quis at posuere dictum aliquet sed turpis ipsum eleifend.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('./components/structure/_footer.html')
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
