@@ -49,11 +49,19 @@
    }
 
    &__close {
+      @media (max-width: 767px) {
+         width: 30px;
+         height: 30px;
+      }
+
       position: absolute;
-      right: -80px;
-      top: -60px;
+      // right: -80px;
+      // top: -60px;
+      right: 6%;
+      top: 8%;
       width: 40px;
       height: 40px;
+      z-index: 1;
 
       @media (min-width: 1024px) {
          cursor: pointer;
@@ -73,6 +81,10 @@
 
    &__btn::before,
    &__btn::after {
+      @media (max-width: 767px) {
+         top: 14px;
+      }
+
       content: "";
       position: absolute;
       background-color: white;

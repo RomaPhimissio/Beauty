@@ -303,6 +303,10 @@ main {
   flex: 0 0 auto;
 }
 
+.header__nav {
+  overflow: auto;
+}
+
 .header__wrapper-entry {
   display: flex;
   align-items: center;
@@ -600,10 +604,11 @@ main {
 
 .popup-movie__close {
   position: absolute;
-  right: -80px;
-  top: -60px;
+  right: 6%;
+  top: 8%;
   width: 40px;
   height: 40px;
+  z-index: 1;
 }
 
 .popup-movie__btn {
@@ -1761,7 +1766,7 @@ main {
 
 @media (max-width: 1023px) {
   .header.active .header__nav {
-    transform: translate(0, 121px);
+    left: 0;
   }
 
   .header__item-link {
@@ -1794,13 +1799,11 @@ main {
   }
 
   .header__nav {
-    min-height: 100vh;
+    height: 100%;
     background-color: rgb(244, 118, 0);
-    transform: translate(-100%, 121px);
-    height: auto;
-    top: 0;
-    left: 0;
-    position: absolute;
+    top: 121px;
+    left: -100%;
+    position: fixed;
     width: 100%;
     transition: all 0.5s ease 0s;
     padding: 90px 7% 0;
@@ -1936,6 +1939,16 @@ main {
     width: 75%;
   }
 
+  .popup-movie__close {
+    width: 30px;
+    height: 30px;
+  }
+
+  .popup-movie__btn::before,
+  .popup-movie__btn::after {
+    top: 14px;
+  }
+
   .desc__title {
     font-size: 40px;
     font-weight: 700;
@@ -2056,7 +2069,8 @@ main {
 
 @media (max-width: 499px) {
   .header.active .header__wrapper-entry {
-    transform: translate(0, 102px);
+    overflow: auto;
+    left: 0;
   }
 
   .header__link-login {
@@ -2070,10 +2084,10 @@ main {
   .header__wrapper-entry {
     padding: 0 10%;
     justify-content: space-between;
-    left: 0;
     transition: all 0.5s ease 0s;
     position: absolute;
-    transform: translate(-100%, 121px);
+    left: -100%;
+    top: 137px;
     width: 100%;
     z-index: 3;
   }

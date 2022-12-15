@@ -8,13 +8,14 @@
 .header.active {
    .header__nav {
       @media (max-width: 1023px) {
-         transform: translate(0, 121px);
+         left: 0;
       }
    }
 
    .header__wrapper-entry {
       @media (max-width: 499px) {
-         transform: translate(0, 102px);
+         overflow: auto;
+         left: 0;
       }
    }
 }
@@ -24,6 +25,7 @@
    align-items: center;
    gap: 10.3%;
    padding: 0 4.04%;
+
 }
 
 .header__logo-link {
@@ -163,24 +165,23 @@
 
 .header__nav {
    @media (max-width: 1023px) {
-      min-height: 100vh;
+      height: 100%;
       background-color: rgba(244, 118, 0, 1);
-      transform: translate(-100%, 121px);
-      height: auto;
-      top: 0;
-      left: 0;
-      position: absolute;
+      top: 121px;
+      left: -100%;
+      position: fixed;
       width: 100%;
       transition: all 0.5s ease 0s;
       padding: 90px 7% 0;
       z-index: 2;
    }
 
+   overflow: auto;
+
    @media (min-width: 1024px) {
       flex: 1 1 auto;
       margin-left: auto;
    }
-
 }
 
 .header__wrapper-entry {
@@ -191,10 +192,10 @@
    @media (max-width: 499px) {
       padding: 0 10%;
       justify-content: space-between;
-      left: 0;
       transition: all 0.5s ease 0s;
       position: absolute;
-      transform: translate(-100%, 121px);
+      left: -100%;
+      top: 137px;
       width: 100%;
       z-index: 3;
    }
