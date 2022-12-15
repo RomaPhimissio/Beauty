@@ -108,6 +108,11 @@ if (playLink) {
    playLink.addEventListener("click", function (e) {
       popUp.classList.add('active');
    })
+   if (window.innerWidth < 768) {
+      if (document.fullscreenEnabled) {
+         popUpFrame.requestFullscreen();
+      }
+   }
    popUpClose.addEventListener("click", function (e) {
       popUp.classList.remove('active');
       popUpFrame.setAttribute("src", `${srcIframePopUp}?enablejsapi=1`);
