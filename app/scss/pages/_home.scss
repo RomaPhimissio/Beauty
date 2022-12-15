@@ -191,7 +191,7 @@
 
 .desc__product-details {
     @media (max-width: 499px) {
-        padding: 20px 49px 23px 30px;
+        padding: 20px 0 23px 30px;
         width: 154px;
         right: auto;
         left: 10%;
@@ -205,7 +205,7 @@
     flex-direction: column;
     width: 164px;
     min-height: 203px;
-    padding: 25px 49px 23px 40px;
+    padding: 25px 0 23px 40px;
     border-radius: 4px;
     z-index: 1;
     background-color: rgba(255, 248, 230, 1);
@@ -296,6 +296,7 @@
     display: inline-block;
     font-size: 18px;
     margin-bottom: 16px;
+    width: max-content;
 }
 
 .desc__stars::before {
